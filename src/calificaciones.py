@@ -11,7 +11,7 @@ def contar_calificaciones(calificaciones):
 
 
 def sumar_calificaciones(calificaciones):
-    pass
+    pass 
 
 
 def calificacion_maxima(calificaciones):
