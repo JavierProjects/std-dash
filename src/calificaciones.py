@@ -7,7 +7,7 @@ condicionales, diccionarios y funciones.
 
 
 def contar_calificaciones(calificaciones):
-    pass
+    return len(calificaciones)
 
 
 def sumar_calificaciones(calificaciones):
