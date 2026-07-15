@@ -32,7 +32,8 @@ def evaluar_progreso():
         sub_suite = unittest.TestSuite()
         for suite in suite_completa:
             for test_case in suite:
-                if hasattr(test_case, '_testMethodName') and funcion in test_case._testMethodName:
+                # test_case.id() contiene la ruta completa, incluyendo el nombre del archivo
+                if funcion in test_case.id():
                     sub_suite.addTest(test_case)
         
         if sub_suite.countTestCases() > 0:
