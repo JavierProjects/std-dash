@@ -16,385 +16,385 @@ MAPEO_ALUMNOS = {
     "angeles_m_luis": {
         "equipo": "equipo_1",
         "funciones": [
-            "funcion_1",
-            "funcion_2",
-            "funcion_3",
-            "funcion_4",
-            "funcion_5",
-            "funcion_6",
-            "funcion_7"
+            "test_01_contar_calificaciones.py",
+            "test_02_sumar_calificaciones.py",
+            "test_03_calificacion_maxima.py",
+            "test_04_calificacion_minima.py",
+            "test_05_contar_aprobados.py",
+            "test_06_contar_reprobados.py",
+            "test_07_clasificar_calificacion.py"
         ]
     },
     "artega_a_angel": {
         "equipo": "equipo_2",
         "funciones": [
-            "funcion_1",
-            "funcion_2",
-            "funcion_3",
-            "funcion_4",
-            "funcion_5",
-            "funcion_6",
-            "funcion_7"
+            "test_01_contar_calificaciones.py",
+            "test_02_sumar_calificaciones.py",
+            "test_03_calificacion_maxima.py",
+            "test_04_calificacion_minima.py",
+            "test_05_contar_aprobados.py",
+            "test_06_contar_reprobados.py",
+            "test_07_clasificar_calificacion.py"
         ]
     },
     "bravo_r_alain": {
         "equipo": "equipo_3",
         "funciones": [
-            "funcion_1",
-            "funcion_2",
-            "funcion_3",
-            "funcion_4",
-            "funcion_5",
-            "funcion_6",
-            "funcion_7"
+            "test_01_contar_calificaciones.py",
+            "test_02_sumar_calificaciones.py",
+            "test_03_calificacion_maxima.py",
+            "test_04_calificacion_minima.py",
+            "test_05_contar_aprobados.py",
+            "test_06_contar_reprobados.py",
+            "test_07_clasificar_calificacion.py"
         ]
     },
     "cruz_o_sam": {
         "equipo": "equipo_4",
         "funciones": [
-            "funcion_1",
-            "funcion_2",
-            "funcion_3",
-            "funcion_4",
-            "funcion_5",
-            "funcion_6",
-            "funcion_7"
+            "test_01_contar_calificaciones.py",
+            "test_02_sumar_calificaciones.py",
+            "test_03_calificacion_maxima.py",
+            "test_04_calificacion_minima.py",
+            "test_05_contar_aprobados.py",
+            "test_06_contar_reprobados.py",
+            "test_07_clasificar_calificacion.py"
         ]
     },
     "galevz_j_dulce": {
         "equipo": "equipo_5",
         "funciones": [
-            "funcion_1",
-            "funcion_2",
-            "funcion_3",
-            "funcion_4",
-            "funcion_5",
-            "funcion_6",
-            "funcion_7"
+            "test_01_contar_calificaciones.py",
+            "test_02_sumar_calificaciones.py",
+            "test_03_calificacion_maxima.py",
+            "test_04_calificacion_minima.py",
+            "test_05_contar_aprobados.py",
+            "test_06_contar_reprobados.py",
+            "test_07_clasificar_calificacion.py"
         ]
     },
     "garcia_a_gael": {
         "equipo": "equipo_6",
         "funciones": [
-            "funcion_1",
-            "funcion_2",
-            "funcion_3",
-            "funcion_4",
-            "funcion_5",
-            "funcion_6",
-            "funcion_7"
+            "test_01_contar_calificaciones.py",
+            "test_02_sumar_calificaciones.py",
+            "test_03_calificacion_maxima.py",
+            "test_04_calificacion_minima.py",
+            "test_05_contar_aprobados.py",
+            "test_06_contar_reprobados.py",
+            "test_07_clasificar_calificacion.py"
         ]
     },
     "garcia_g_emilio": {
         "equipo": "equipo_7",
         "funciones": [
-            "funcion_1",
-            "funcion_2",
-            "funcion_3",
-            "funcion_4",
-            "funcion_5",
-            "funcion_6",
-            "funcion_7"
+            "test_01_contar_calificaciones.py",
+            "test_02_sumar_calificaciones.py",
+            "test_03_calificacion_maxima.py",
+            "test_04_calificacion_minima.py",
+            "test_05_contar_aprobados.py",
+            "test_06_contar_reprobados.py",
+            "test_07_clasificar_calificacion.py"
         ]
     },
     "hndez_m_allison": {
         "equipo": "equipo_1",
         "funciones": [
-            "funcion_8",
-            "funcion_9",
-            "funcion_10",
-            "funcion_11",
-            "funcion_12",
-            "funcion_13",
-            "funcion_14"
+            "test_08_promedio.py",
+            "test_09_porcentaje_aprobados.py",
+            "test_10_porcentaje_reprobados.py",
+            "test_11_frecuencia_calificaciones.py",
+            "test_12_moda.py",
+            "test_13_mediana.py",
+            "test_14_resumen_calificaciones.py"
         ]
     },
     "lopez_e_melissa": {
         "equipo": "equipo_2",
         "funciones": [
-            "funcion_8",
-            "funcion_9",
-            "funcion_10",
-            "funcion_11",
-            "funcion_12",
-            "funcion_13",
-            "funcion_14"
+            "test_08_promedio.py",
+            "test_09_porcentaje_aprobados.py",
+            "test_10_porcentaje_reprobados.py",
+            "test_11_frecuencia_calificaciones.py",
+            "test_12_moda.py",
+            "test_13_mediana.py",
+            "test_14_resumen_calificaciones.py"
         ]
     },
     "mejia_h_sinai": {
         "equipo": "equipo_3",
         "funciones": [
-            "funcion_8",
-            "funcion_9",
-            "funcion_10",
-            "funcion_11",
-            "funcion_12",
-            "funcion_13",
-            "funcion_14"
+            "test_08_promedio.py",
+            "test_09_porcentaje_aprobados.py",
+            "test_10_porcentaje_reprobados.py",
+            "test_11_frecuencia_calificaciones.py",
+            "test_12_moda.py",
+            "test_13_mediana.py",
+            "test_14_resumen_calificaciones.py"
         ]
     },
     "maturano_p_citla": {
         "equipo": "equipo_4",
         "funciones": [
-            "funcion_8",
-            "funcion_9",
-            "funcion_10",
-            "funcion_11",
-            "funcion_12",
-            "funcion_13",
-            "funcion_14"
+            "test_08_promedio.py",
+            "test_09_porcentaje_aprobados.py",
+            "test_10_porcentaje_reprobados.py",
+            "test_11_frecuencia_calificaciones.py",
+            "test_12_moda.py",
+            "test_13_mediana.py",
+            "test_14_resumen_calificaciones.py"
         ]
     },
     "mendoza_r_jose": {
         "equipo": "equipo_5",
         "funciones": [
-            "funcion_8",
-            "funcion_9",
-            "funcion_10",
-            "funcion_11",
-            "funcion_12",
-            "funcion_13",
-            "funcion_14"
+            "test_08_promedio.py",
+            "test_09_porcentaje_aprobados.py",
+            "test_10_porcentaje_reprobados.py",
+            "test_11_frecuencia_calificaciones.py",
+            "test_12_moda.py",
+            "test_13_mediana.py",
+            "test_14_resumen_calificaciones.py"
         ]
     },
     "monjaraz_p_jovany": {
         "equipo": "equipo_6",
         "funciones": [
-            "funcion_8",
-            "funcion_9",
-            "funcion_10",
-            "funcion_11",
-            "funcion_12",
-            "funcion_13",
-            "funcion_14"
+            "test_08_promedio.py",
+            "test_09_porcentaje_aprobados.py",
+            "test_10_porcentaje_reprobados.py",
+            "test_11_frecuencia_calificaciones.py",
+            "test_12_moda.py",
+            "test_13_mediana.py",
+            "test_14_resumen_calificaciones.py"
         ]
     },
     "perez_a_alison": {
         "equipo": "equipo_7",
         "funciones": [
-            "funcion_8",
-            "funcion_9",
-            "funcion_10",
-            "funcion_11",
-            "funcion_12",
-            "funcion_13",
-            "funcion_14"
+            "test_08_promedio.py",
+            "test_09_porcentaje_aprobados.py",
+            "test_10_porcentaje_reprobados.py",
+            "test_11_frecuencia_calificaciones.py",
+            "test_12_moda.py",
+            "test_13_mediana.py",
+            "test_14_resumen_calificaciones.py"
         ]
     },
     "perez_r_oscar": {
         "equipo": "equipo_1",
         "funciones": [
-            "funcion_15",
-            "funcion_16",
-            "funcion_17",
-            "funcion_18",
-            "funcion_19",
-            "funcion_20",
-            "funcion_21"
+            "test_15_contar_clases.py",
+            "test_16_contar_asistencias.py",
+            "test_17_contar_faltas.py",
+            "test_18_porcentaje_asistencia.py",
+            "test_19_esta_en_riesgo.py",
+            "test_20_alumnos_en_riesgo.py",
+            "test_21_promedio_asistencia_grupo.py"
         ]
     },
     "portillo_g_bruno": {
         "equipo": "equipo_2",
         "funciones": [
-            "funcion_15",
-            "funcion_16",
-            "funcion_17",
-            "funcion_18",
-            "funcion_19",
-            "funcion_20",
-            "funcion_21"
+            "test_15_contar_clases.py",
+            "test_16_contar_asistencias.py",
+            "test_17_contar_faltas.py",
+            "test_18_porcentaje_asistencia.py",
+            "test_19_esta_en_riesgo.py",
+            "test_20_alumnos_en_riesgo.py",
+            "test_21_promedio_asistencia_grupo.py"
         ]
     },
     "rufino_v_luis": {
         "equipo": "equipo_3",
         "funciones": [
-            "funcion_15",
-            "funcion_16",
-            "funcion_17",
-            "funcion_18",
-            "funcion_19",
-            "funcion_20",
-            "funcion_21"
+            "test_15_contar_clases.py",
+            "test_16_contar_asistencias.py",
+            "test_17_contar_faltas.py",
+            "test_18_porcentaje_asistencia.py",
+            "test_19_esta_en_riesgo.py",
+            "test_20_alumnos_en_riesgo.py",
+            "test_21_promedio_asistencia_grupo.py"
         ]
     },
     "salvador_b_citla": {
         "equipo": "equipo_4",
         "funciones": [
-            "funcion_15",
-            "funcion_16",
-            "funcion_17",
-            "funcion_18",
-            "funcion_19",
-            "funcion_20",
-            "funcion_21"
+            "test_15_contar_clases.py",
+            "test_16_contar_asistencias.py",
+            "test_17_contar_faltas.py",
+            "test_18_porcentaje_asistencia.py",
+            "test_19_esta_en_riesgo.py",
+            "test_20_alumnos_en_riesgo.py",
+            "test_21_promedio_asistencia_grupo.py"
         ]
     },
     "aspeytia_g_alma": {
         "equipo": "equipo_5",
         "funciones": [
-            "funcion_15",
-            "funcion_16",
-            "funcion_17",
-            "funcion_18",
-            "funcion_19",
-            "funcion_20",
-            "funcion_21"
+            "test_15_contar_clases.py",
+            "test_16_contar_asistencias.py",
+            "test_17_contar_faltas.py",
+            "test_18_porcentaje_asistencia.py",
+            "test_19_esta_en_riesgo.py",
+            "test_20_alumnos_en_riesgo.py",
+            "test_21_promedio_asistencia_grupo.py"
         ]
     },
     "galea_l_miguel": {
         "equipo": "equipo_6",
         "funciones": [
-            "funcion_15",
-            "funcion_16",
-            "funcion_17",
-            "funcion_18",
-            "funcion_19",
-            "funcion_20",
-            "funcion_21"
+            "test_15_contar_clases.py",
+            "test_16_contar_asistencias.py",
+            "test_17_contar_faltas.py",
+            "test_18_porcentaje_asistencia.py",
+            "test_19_esta_en_riesgo.py",
+            "test_20_alumnos_en_riesgo.py",
+            "test_21_promedio_asistencia_grupo.py"
         ]
     },
     "islas_o_maria": {
         "equipo": "equipo_7",
         "funciones": [
-            "funcion_15",
-            "funcion_16",
-            "funcion_17",
-            "funcion_18",
-            "funcion_19",
-            "funcion_20",
-            "funcion_21"
+            "test_15_contar_clases.py",
+            "test_16_contar_asistencias.py",
+            "test_17_contar_faltas.py",
+            "test_18_porcentaje_asistencia.py",
+            "test_19_esta_en_riesgo.py",
+            "test_20_alumnos_en_riesgo.py",
+            "test_21_promedio_asistencia_grupo.py"
         ]
     },
     "lopez_l_elias": {
         "equipo": "equipo_1",
         "funciones": [
-            "funcion_22",
-            "funcion_23",
-            "funcion_24",
-            "funcion_25",
-            "funcion_26",
-            "funcion_27",
-            "funcion_28"
+            "test_22_contar_respuestas.py",
+            "test_23_obtener_opciones.py",
+            "test_24_frecuencia_respuestas.py",
+            "test_25_respuesta_mas_comun.py",
+            "test_26_porcentaje_respuesta.py",
+            "test_27_resumen_encuesta.py",
+            "test_28_reporte_general.py"
         ]
     },
     "mnez_h_gael": {
         "equipo": "equipo_2",
         "funciones": [
-            "funcion_22",
-            "funcion_23",
-            "funcion_24",
-            "funcion_25",
-            "funcion_26",
-            "funcion_27",
-            "funcion_28"
+            "test_22_contar_respuestas.py",
+            "test_23_obtener_opciones.py",
+            "test_24_frecuencia_respuestas.py",
+            "test_25_respuesta_mas_comun.py",
+            "test_26_porcentaje_respuesta.py",
+            "test_27_resumen_encuesta.py",
+            "test_28_reporte_general.py"
         ]
     },
     "mnez_o_angel": {
         "equipo": "equipo_3",
         "funciones": [
-            "funcion_22",
-            "funcion_23",
-            "funcion_24",
-            "funcion_25",
-            "funcion_26",
-            "funcion_27",
-            "funcion_28"
+            "test_22_contar_respuestas.py",
+            "test_23_obtener_opciones.py",
+            "test_24_frecuencia_respuestas.py",
+            "test_25_respuesta_mas_comun.py",
+            "test_26_porcentaje_respuesta.py",
+            "test_27_resumen_encuesta.py",
+            "test_28_reporte_general.py"
         ]
     },
     "perez_m_chris": {
         "equipo": "equipo_4",
         "funciones": [
-            "funcion_22",
-            "funcion_23",
-            "funcion_24",
-            "funcion_25",
-            "funcion_26",
-            "funcion_27",
-            "funcion_28"
+            "test_22_contar_respuestas.py",
+            "test_23_obtener_opciones.py",
+            "test_24_frecuencia_respuestas.py",
+            "test_25_respuesta_mas_comun.py",
+            "test_26_porcentaje_respuesta.py",
+            "test_27_resumen_encuesta.py",
+            "test_28_reporte_general.py"
         ]
     },
     "porras_b_ama": {
         "equipo": "equipo_5",
         "funciones": [
-            "funcion_22",
-            "funcion_23",
-            "funcion_24",
-            "funcion_25",
-            "funcion_26",
-            "funcion_27",
-            "funcion_28"
+            "test_22_contar_respuestas.py",
+            "test_23_obtener_opciones.py",
+            "test_24_frecuencia_respuestas.py",
+            "test_25_respuesta_mas_comun.py",
+            "test_26_porcentaje_respuesta.py",
+            "test_27_resumen_encuesta.py",
+            "test_28_reporte_general.py"
         ]
     },
     "mejia_e_estrella": {
         "equipo": "equipo_6",
         "funciones": [
-            "funcion_22",
-            "funcion_23",
-            "funcion_24",
-            "funcion_25",
-            "funcion_26",
-            "funcion_27",
-            "funcion_28"
+            "test_22_contar_respuestas.py",
+            "test_23_obtener_opciones.py",
+            "test_24_frecuencia_respuestas.py",
+            "test_25_respuesta_mas_comun.py",
+            "test_26_porcentaje_respuesta.py",
+            "test_27_resumen_encuesta.py",
+            "test_28_reporte_general.py"
         ]
     },
     "mnez_a_jose": {
         "equipo": "equipo_7",
         "funciones": [
-            "funcion_22",
-            "funcion_23",
-            "funcion_24",
-            "funcion_25",
-            "funcion_26",
-            "funcion_27",
-            "funcion_28"
+            "test_22_contar_respuestas.py",
+            "test_23_obtener_opciones.py",
+            "test_24_frecuencia_respuestas.py",
+            "test_25_respuesta_mas_comun.py",
+            "test_26_porcentaje_respuesta.py",
+            "test_27_resumen_encuesta.py",
+            "test_28_reporte_general.py"
         ]
     },
     "bob": {
         "equipo": "equipo_8",
         "funciones": [
-            "funcion_1",
-            "funcion_2",
-            "funcion_3",
-            "funcion_4",
-            "funcion_5",
-            "funcion_6",
-            "funcion_7"
+            "test_01_contar_calificaciones.py",
+            "test_02_sumar_calificaciones.py",
+            "test_03_calificacion_maxima.py",
+            "test_04_calificacion_minima.py",
+            "test_05_contar_aprobados.py",
+            "test_06_contar_reprobados.py",
+            "test_07_clasificar_calificacion.py"
         ]
     },
     "javier": {
         "equipo": "equipo_8",
         "funciones": [
-            "funcion_8",
-            "funcion_9",
-            "funcion_10",
-            "funcion_11",
-            "funcion_12",
-            "funcion_13",
-            "funcion_14"
+            "test_08_promedio.py",
+            "test_09_porcentaje_aprobados.py",
+            "test_10_porcentaje_reprobados.py",
+            "test_11_frecuencia_calificaciones.py",
+            "test_12_moda.py",
+            "test_13_mediana.py",
+            "test_14_resumen_calificaciones.py"
         ]
     },
     "eve": {
         "equipo": "equipo_8",
         "funciones": [
-            "funcion_15",
-            "funcion_16",
-            "funcion_17",
-            "funcion_18",
-            "funcion_19",
-            "funcion_20",
-            "funcion_21"
+            "test_15_contar_clases.py",
+            "test_16_contar_asistencias.py",
+            "test_17_contar_faltas.py",
+            "test_18_porcentaje_asistencia.py",
+            "test_19_esta_en_riesgo.py",
+            "test_20_alumnos_en_riesgo.py",
+            "test_21_promedio_asistencia_grupo.py"
         ]
     },
     "alice": {
         "equipo": "equipo_8",
         "funciones": [
-            "funcion_22",
-            "funcion_23",
-            "funcion_24",
-            "funcion_25",
-            "funcion_26",
-            "funcion_27",
-            "funcion_28"
+            "test_22_contar_respuestas.py",
+            "test_23_obtener_opciones.py",
+            "test_24_frecuencia_respuestas.py",
+            "test_25_respuesta_mas_comun.py",
+            "test_26_porcentaje_respuesta.py",
+            "test_27_resumen_encuesta.py",
+            "test_28_reporte_general.py"
         ]
     }
 }
