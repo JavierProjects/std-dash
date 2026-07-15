@@ -1,13 +1,13 @@
 # Función auxiliar para generar las listas de funciones según el módulo
 def generar_funciones(modulo):
     if modulo == 1:
-        return [f"funcion_{i}" for i in range(1, 8)]    # 1 al 7
+        return ['test_01_contar_calificaciones.py', 'test_02_sumar_calificaciones.py', 'test_03_calificacion_maxima.py', 'test_04_calificacion_minima.py', 'test_05_contar_aprobados.py', 'test_06_contar_reprobados.py', 'test_07_clasificar_calificacion.py']    # 1 al 7
     elif modulo == 2:
-        return [f"funcion_{i}" for i in range(8, 15)]   # 8 al 14
+        return ['test_08_promedio.py', 'test_09_porcentaje_aprobados.py', 'test_10_porcentaje_reprobados.py', 'test_11_frecuencia_calificaciones.py', 'test_12_moda.py', 'test_13_mediana.py', 'test_14_resumen_calificaciones.py']   # 8 al 14
     elif modulo == 3:
-        return [f"funcion_{i}" for i in range(15, 22)]  # 15 al 21
+        return ['test_15_contar_clases.py', 'test_16_contar_asistencias.py', 'test_17_contar_faltas.py', 'test_18_porcentaje_asistencia.py', 'test_19_esta_en_riesgo.py', 'test_20_alumnos_en_riesgo.py', 'test_21_promedio_asistencia_grupo.py']  # 15 al 21
     elif modulo == 4:
-        return [f"funcion_{i}" for i in range(22, 29)]  # 22 al 28
+        return ['test_22_contar_respuestas.py', 'test_23_obtener_opciones.py', 'test_24_frecuencia_respuestas.py', 'test_25_respuesta_mas_comun.py', 'test_26_porcentaje_respuesta.py', 'test_27_resumen_encuesta.py', 'test_28_reporte_general.py']  # 22 al 28
     return []
 
 # Diccionario importable basado en tu CSV
