@@ -1,0 +1,51 @@
+name: 1 - Evaluador de Código
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - master
+
+jobs:
+  evaluar:
+    runs-on: ubuntu-latest
+    steps:
+    # 1. Descargamos la rama del alumno en una carpeta llamada 'repo_alumno'
+    - name: Checkout código del alumno
+      uses: actions/checkout@v4
+      with:
+        path: repo_alumno
+
+    # 2. Descargamos la rama protegida (main) en una carpeta llamada 'repo_main'
+    - name: Checkout tests protegidos (main)
+      uses: actions/checkout@v4
+      with:
+        ref: main
+        path: repo_main
+
+    # 3. Copiamos los archivos SRC del alumno hacia el entorno protegido
+    - name: Preparar entorno de prueba
+      run: |
+        cp -r repo_alumno/src/* repo_main/src/ || true
+
+    - name: Configurar Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    # 4. Corremos el motor desde la carpeta segura
+    - name: Ejecutar Evaluación
+      working-directory: ./repo_main
+      env:
+        NOMBRE_RAMA: ${{ github.ref_name }}
+      run: |
+        python -m pip install --upgrade pip
+        python .github/scripts/evaluar_avance.py
+
+    # 5. Subimos la boleta de calificaciones (Artifact) para el flujo mensajero
+    - name: Guardar calificación
+      uses: actions/upload-artifact@v4
+      with:
+        name: boleta-evaluacion
+        path: ./repo_main/resultado.json
+        retention-days: 1
