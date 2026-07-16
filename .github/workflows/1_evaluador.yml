@@ -26,12 +26,9 @@ jobs:
     # 3. Copiamos los archivos SRC del alumno hacia el entorno protegido
     - name: Preparar entorno de prueba
       run: |
+        mkdir -p repo_main/src
+        touch repo_main/src/__init__.py
         cp -r repo_alumno/src/* repo_main/src/ || true
-
-    - name: Configurar Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10'
 
     # 4. Corremos el motor desde la carpeta segura
     - name: Ejecutar Evaluación
