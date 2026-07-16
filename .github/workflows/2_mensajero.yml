@@ -1,0 +1,58 @@
+name: 2 - Actualizar Firebase
+
+on:
+  workflow_run:
+    workflows: ["1 - Evaluador de Código"]
+    types:
+      - completed
+
+jobs:
+  enviar-datos:
+    runs-on: ubuntu-latest
+    # Si el evaluador falló o Bob intentó alterarlo y crasheó, no hacemos nada.
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    
+    # ¡Aquí conectamos tu caja fuerte!
+    environment: produccion 
+
+    steps:
+    - name: Descargar boleta de calificación
+      uses: actions/download-artifact@v4
+      with:
+        name: boleta-evaluacion
+        run-id: ${{ github.event.workflow_run.id }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Configurar Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Instalar requests
+      run: pip install requests
+
+    # Solo este paso tiene acceso a los secretos
+    - name: Enviar a Firebase
+      env:
+        FIREBASE_URL: ${{ secrets.FIREBASE_URL }}
+        FIREBASE_SECRET: ${{ secrets.FIREBASE_SECRET }}
+      run: |
+        python -c "
+        import json, os, requests
+        
+        with open('resultado.json') as f:
+            datos = json.load(f)
+            
+        url_base = os.environ.get('FIREBASE_URL')
+        if not url_base.endswith('/'): url_base += '/'
+        
+        url_destino = f\"{url_base}equipos/{datos['equipo']}/{datos['rama']}.json?auth={os.environ.get('FIREBASE_SECRET')}\"
+        
+        payload = {'progreso': datos['porcentaje'], 'funciones_terminadas': datos['funciones_terminadas']}
+        
+        respuesta = requests.patch(url_destino, json=payload)
+        if respuesta.status_code == 200:
+            print(f\"¡Éxito! Avance de {datos['rama']} ({datos['porcentaje']}%) guardado.\")
+        else:
+            print(f\"Error de Firebase: {respuesta.text}\")
+        "
