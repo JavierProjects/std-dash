@@ -17,10 +17,10 @@ jobs:
         path: repo_alumno
 
     # 2. Descargamos la rama protegida (main) en una carpeta llamada 'repo_main'
-    - name: Checkout tests protegidos (main)
+    - name: Checkout tests protegidos (master)
       uses: actions/checkout@v4
       with:
-        ref: main
+        ref: master
         path: repo_main
 
     # 3. Copiamos los archivos SRC del alumno hacia el entorno protegido
