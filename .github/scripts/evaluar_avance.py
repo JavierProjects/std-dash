@@ -45,11 +45,15 @@ def evaluar_progreso():
 
     funciones_pasadas = 0
 
-    for funcion in funciones_asignadas:
+    for funcion_archivo in funciones_asignadas:
+        # Quitamos el '.py' del nombre que está en tu diccionario para comparar limpio
+        prefijo_archivo = funcion_archivo.replace('.py', '') 
+        
         sub_suite = unittest.TestSuite()
         
         for test_case in todos_los_tests:
-            if funcion in test_case.id():
+            # El ID siempre empieza por el nombre del archivo (ej. test_01_contar_calificaciones)
+            if test_case.id().startswith(prefijo_archivo):
                 sub_suite.addTest(test_case)
         
         if sub_suite.countTestCases() > 0:
