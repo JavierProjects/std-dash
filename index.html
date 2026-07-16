@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Avances</title>
+    <style>
+        /* Estilos generales */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f7f6; 
+            margin: 0; 
+            padding: 40px 20px; 
+        }
+        h1 { 
+            text-align: center; 
+            color: #2c3e50; 
+            margin-bottom: 40px;
+        }
+        
+        /* Contenedor de los equipos */
+        .equipos-container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 25px; 
+            justify-content: center; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Tarjeta de cada equipo */
+        .equipo-card { 
+            background: white; 
+            border-radius: 10px; 
+            padding: 25px; 
+            width: 320px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+        }
+        .equipo-title { 
+            margin-top: 0; 
+            color: #34495e; 
+            border-bottom: 2px solid #ecf0f1; 
+            padding-bottom: 12px; 
+            text-transform: capitalize;
+            font-size: 1.2rem;
+        }
+        
+        /* Estilos de los alumnos */
+        .alumno { 
+            margin-bottom: 20px; 
+        }
+        .alumno-name { 
+            font-weight: 600; 
+            color: #555;
+            margin-bottom: 8px; 
+            display: flex; 
+            justify-content: space-between;
+            font-size: 0.95rem;
+            text-transform: capitalize;
+        }
+        
+        /* Barras de progreso */
+        .progress-bg { 
+            background: #ecf0f1; 
+            border-radius: 6px; 
+            height: 18px; 
+            width: 100%; 
+            overflow: hidden; 
+        }
+        .progress-bar { 
+            height: 100%; 
+            width: 0%; 
+            background: #3498db; /* Color AZUL cuando está en progreso */
+            transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.4s; 
+        }
+        .progress-bar.completed { 
+            background: #2ecc71; /* Color VERDE cuando llega al 100% */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 Avance de Implementación - Probabilidad y Estadística</h1>
+    
+    <div class="equipos-container" id="dashboard">
+        <p style="text-align: center; color: #7f8c8d;">Conectando a la base de datos en tiempo real...</p>
+    </div>
+
+    <!-- SDK Modular de Firebase -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+        // --- ¡ATENCIÓN! PON TU URL AQUÍ ---
+        const firebaseConfig = {
+            databaseURL: "https://dash-student-programming-default-rtdb.firebaseio.com/" 
+        };
+
+        // Inicializamos Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+        const equiposRef = ref(db, 'equipos/');
+
+        // Escuchamos los cambios en tiempo real
+        onValue(equiposRef, (snapshot) => {
+            const data = snapshot.val();
+            const dashboard = document.getElementById('dashboard');
+            
+            if (!data) {
+                dashboard.innerHTML = '<p style="text-align: center; color: #7f8c8d;">Aún no hay avances registrados.</p>';
+                return;
+            }
+
+            dashboard.innerHTML = ''; // Limpiamos el panel antes de redibujar
+
+            // Iteramos sobre cada equipo (equipo_1, equipo_2, etc.)
+            for (const equipo in data) {
+                const alumnos = data[equipo];
+                
+                // Creamos la tarjeta del equipo
+                const equipoCard = document.createElement('div');
+                equipoCard.className = 'equipo-card';
+                equipoCard.innerHTML = `<h3 class="equipo-title">${equipo.replace('_', ' ')}</h3>`;
+                
+                // Iteramos sobre los alumnos de ese equipo
+                for (const alumno in alumnos) {
+                    const info = alumnos[alumno];
+                    const progreso = info.progreso || 0;
+                    
+                    // Si el progreso es 100, le asignamos la clase 'completed' (verde)
+                    const claseColor = progreso === 100 ? 'completed' : '';
+                    
+                    const alumnoDiv = document.createElement('div');
+                    alumnoDiv.className = 'alumno';
+                    alumnoDiv.innerHTML = `
+                        <div class="alumno-name">
+                            <span>${alumno.replace(/_/g, ' ')}</span>
+                            <span>${progreso}%</span>
+                        </div>
+                        <div class="progress-bg">
+                            <div class="progress-bar ${claseColor}" style="width: ${progreso}%"></div>
+                        </div>
+                    `;
+                    equipoCard.appendChild(alumnoDiv);
+                }
+                
+                dashboard.appendChild(equipoCard);
+            }
+        });
+    </script>
+</body>
+</html>
