@@ -57,18 +57,18 @@ def evaluar_progreso():
                 sub_suite.addTest(test_case)
         
         if sub_suite.countTestCases() > 0:
-            print(f"\n--- Probando grupo: {funcion} ---")
+            print(f"\n--- Probando grupo: {funcion_archivo} ---")
             runner = unittest.TextTestRunner(stream=sys.stdout, verbosity=2)
             resultado = runner.run(sub_suite)
             
             if resultado.wasSuccessful():
-                print(f"✅ {funcion} PASÓ.")
+                print(f"✅ {funcion_archivo} PASÓ.")
                 funciones_pasadas += 1
             else:
                 # AQUÍ veremos el error real que impide que pase
-                print(f"❌ {funcion} NO pasó.")
+                print(f"❌ {funcion_archivo} NO pasó.")
         else:
-            print(f"⚠️ No se encontraron tests para {funcion}")
+            print(f"⚠️ No se encontraron tests para {funcion_archivo}")
 
     porcentaje = int((funciones_pasadas / total_funciones) * 100)
     print(f"Resultado final: {funciones_pasadas}/{total_funciones} funciones aprobadas ({porcentaje}%)")
